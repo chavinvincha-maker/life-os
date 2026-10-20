@@ -1,9 +1,9 @@
 {
-  "name": "Life OS Elegant",
+  "name": "Life OS — Gentle Bloom",
   "short_name": "Life OS",
-  "description": "Personal life management workspace",
-  "start_url": "./index.html",
+  "start_url": "./",
   "display": "standalone",
-  "background_color": "#f6f3ed",
-  "theme_color": "#f6f3ed"
+  "background_color": "#faf5ee",
+  "theme_color": "#f6c8ce",
+  "description": "พื้นที่วางแผนชีวิตอย่างอ่อนโยน"
 }

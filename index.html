@@ -4,7 +4,9 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="theme-color" content="#f6f3ed"/>
-<title>Life OS — Elegant</title>
+<meta name="color-scheme" content="light dark"/>
+<title>Life OS — Gentle Bloom</title>
+<meta name="description" content="พื้นที่วางแผนชีวิตอย่างอ่อนโยน — Life OS Gentle Bloom">
 <link rel="manifest" href="manifest.json"/>
 <link rel="stylesheet" href="styles.css"/>
 </head>
@@ -20,15 +22,17 @@
       <button class="nav-item" data-page="study"><span>▤</span> การเรียน & คำศัพท์</button>
       <button class="nav-item" data-page="habits"><span>♡</span> นิสัยและสุขภาพ</button>
       <button class="nav-item" data-page="finance"><span>◈</span> การเงิน & Donation</button>
-      <button class="nav-item" data-page="journal"><span>✎</span> Journal & Review</button>
-      <button class="nav-item" data-page="insights"><span>⌁</span> สถิติและรายงาน</button>
+      <button class="nav-item" data-page="journal"><span>✎</span> Journal</button>
+      <button class="nav-item recovery-nav" data-page="recovery"><span>☁</span> Recovery Mode</button>
+      <button class="nav-item" data-page="insights"><span>⌁</span> Progress & Review</button>
+      <button class="nav-item" data-page="settings"><span>⚙</span> ตั้งค่า</button>
     </nav>
-    <div class="sidebar-bottom"><div class="avatar">Y</div><div><strong>My Workspace</strong><small>Personal Life OS</small></div><button id="exportBtn" class="icon-btn" title="ส่งออกข้อมูล">↗</button></div>
+    <div class="sidebar-bottom"><div class="avatar">Y</div><div><strong>My Workspace</strong><small>Personal Life OS</small></div><button id="exportBtn" class="icon-btn" title="ส่งออกข้อมูลสำรอง">↗</button><button id="importBtn" class="icon-btn" title="นำเข้าข้อมูลสำรอง">↥</button><input id="importFile" type="file" accept="application/json,.json" hidden></div>
   </aside>
   <main class="main">
     <header class="topbar"><div class="crumb">MY WORKSPACE <span>/</span> <b id="crumb">ภาพรวมชีวิต</b></div><div class="top-actions"><span class="today-label" id="todayLabel"></span><button class="icon-btn" id="themeBtn" title="เปลี่ยนธีม">◐</button><button class="primary-btn" id="quickAdd">＋ เพิ่มรายการ</button></div></header>
     <section id="content" class="content"></section>
-    <footer>Life OS · Elegant Edition <span>ข้อมูลบันทึกในเบราว์เซอร์เครื่องนี้</span></footer>
+    <footer>Life OS · Gentle Bloom Edition <span>ข้อมูลบันทึกในเบราว์เซอร์เครื่องนี้</span></footer>
   </main>
 </div>
 <div id="modal" class="modal hidden" role="dialog" aria-modal="true"><div class="modal-card"><div class="modal-head"><h2 id="modalTitle">เพิ่มรายการ</h2><button id="closeModal" class="icon-btn">×</button></div><form id="entryForm"><div id="formFields"></div><div class="modal-actions"><button type="button" class="secondary-btn" id="cancelModal">ยกเลิก</button><button class="primary-btn" type="submit">บันทึกข้อมูล</button></div></form></div></div>

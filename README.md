@@ -1,17 +1,21 @@
-# Life OS — Elegant Edition
+# Life OS — Gentle Bloom v3 (Prototype)
 
-Responsive Thai-first personal life planner prototype.
+เว็บต้นแบบ Responsive สำหรับ GitHub Pages สร้างด้วย HTML, CSS และ JavaScript โดยไม่ต้อง build step
 
-## Run locally
-Open `index.html` in a modern browser. For PWA installation, serve the folder over HTTPS or localhost.
+## ไฟล์
+- `index.html` — โครงหน้าและเมนู 10 ส่วน
+- `styles.css` — Design System และ responsive layout
+- `app.js` — ข้อมูลตัวอย่างและ interaction
+- `manifest.json` — metadata สำหรับ Add to Home Screen
 
-## Features in this prototype
-- Responsive desktop sidebar and mobile bottom navigation
-- Dashboard, Tasks/Planner, Goals, Study/Vocabulary, Habits, Finance/Donation, Journal/Review, Analytics
-- Add/delete tasks, goals, habits, vocabulary, transactions, journal entries and reviews
-- Mark tasks complete, track habits and vocabulary status
-- Basic derived stats, dark mode, JSON backup export
-- Browser-local persistence via localStorage
+## ข้อควรรู้
+- ข้อมูลจัดเก็บใน `localStorage` ของเบราว์เซอร์ ไม่มี Cloud Sync หรือบัญชีผู้ใช้
+- Storage key เดิม `lifeos-elegant-v1` ถูกคงไว้เพื่อช่วยให้เข้าถึงข้อมูลเดิมในเบราว์เซอร์เดียวกันได้ แต่ยังต้องทดสอบกับไฟล์ backup จริงก่อนย้ายข้อมูล
+- ควร Export JSON ก่อนแทนที่ไฟล์เดิมบน GitHub Pages
+- ธีม Light, Pastel Pink, Sage, Lavender และ Dark ใช้งานได้
+- การตั้งภาษา English เป็นเพียงการบันทึกค่าที่เลือก เนื้อหาทั้งหมดยังไม่ได้แปลครบ
+- ไม่มี Push Notifications, Cloud Backup, authentication หรือ Face ID
+- ตัวเลขเริ่มต้นเป็นข้อมูลตัวอย่าง ไม่ใช่ข้อมูลการเงินจริง
 
-## Important limitations
-This is a front-end prototype, not a deployed production service. Data stays in the current browser and does not sync across devices. No login, remote database, push notifications, automatic cloud backups, recurring schedules, or real calendar integration is included. Sample data is illustrative. For multi-device sync and production use, connect a backend such as Supabase/PostgreSQL, add authentication and row-level security, server-side scheduled jobs, tests, and data migration/export controls.
+## เผยแพร่ผ่าน GitHub Pages
+วางไฟล์ทั้ง 5 ไฟล์ไว้ที่ root ของ branch `main` และตั้ง Pages เป็น `Deploy from a branch` → `main` → `/(root)`
