@@ -6,6 +6,7 @@
 3. ข้อมูลตัวอย่างพร้อมให้ทดลอง ข้อมูลใหม่จะบันทึกใน localStorage ของเบราว์เซอร์เครื่องนี้
 
 ## ฟีเจอร์
+- ปรับเฉพาะส่วน Tasks/Projects โดยคงโครงสร้างและธีม 10 หน้าเดิม
 - 10 หน้าหลัก: Dashboard, Planner, Goals, Study, Habit Tracker, Finance, Journal, Recovery Mode, Progress & Review, Settings
 - Tasks มีสถานะ: ยังไม่เริ่ม, กำลังทำ, รอติดตาม, เสร็จแล้ว, ยกเลิก
 - Projects: สร้าง/แก้ไขโปรเจกต์ กำหนดสี วันเริ่มต้น วันครบกำหนด และรายละเอียด
