@@ -1,23 +1,29 @@
-# Life OS – Gentle Bloom v3
+# Life OS – Gentle Bloom v5 🌷
 
-A Thai-first, responsive pastel/kawaii personal life organizer.
+เว็บแอปจัดการชีวิตส่วนตัวภาษาไทย โทน Pastel Kawaii รองรับหน้าจอมือถือและคอมพิวเตอร์
 
-## Start
-Open `index.html` in a modern browser. No build step is required. Data is stored in the current browser's localStorage.
+## วิธีเปิดใช้งาน
+1. แตกไฟล์ ZIP
+2. เปิด `index.html` ในเบราว์เซอร์สมัยใหม่
+3. ข้อมูลจะถูกเก็บใน localStorage ของเบราว์เซอร์นั้น
+4. เข้าเมนู **ตั้งค่า** แล้วดาวน์โหลดข้อมูลสำรอง JSON เป็นระยะ
 
-## Features
-- Dashboard with monthly master calendar connected to tasks, appointments, bills, and document expiry dates
-- Tasks with status, priority, category, date/time, projects, and goals
-- Study vocabulary bank, habit tracker, and journal
-- Finance: bank/cash account balances, income/expense/donation records, debt tracking, bills, savings goals
-- Health: water, sleep, exercise, mood, energy, weight/symptom logs, medication list, and appointments
-- Personal document expiry tracking and lead-time reminders shown when the app is open
-- Weekly/monthly review notes and history
-- JSON backup and restore; imports existing `lifeos-elegant-v1` local data on first launch if v3 data is absent
+## สิ่งที่มี
+- ภาพรวมและปฏิทินรวมสำหรับงาน บิล นัดหมาย และวันหมดอายุเอกสาร
+- งานพร้อมสถานะ 5 แบบ ความสำคัญ โปรเจกต์ และการแก้ไขงาน
+- เป้าหมาย การเรียน/คำศัพท์ และ Habit Tracker
+- การเงิน: บัญชี ยอดเงิน รายรับรายจ่าย หนี้ บิล และเงินออม
+- สุขภาพ: การนอน น้ำ การออกกำลังกาย อารมณ์ น้ำหนัก ยา และนัดหมาย
+- เอกสารส่วนตัวและการติดตามวันหมดอายุ
+- รีวิวรายสัปดาห์/รายเดือน
+- ส่งออก/นำเข้าข้อมูลสำรอง JSON
 
-## Limitations to know
-- **Cloud sync is not active yet.** Cross-device sync needs a real backend, authentication, per-user database security rules, and integration/testing. The Settings page gives setup notes; saving Firebase config alone does not enable sync.
-- Expiry reminders are visible inside the app when opened, not push notifications while it is closed.
-- No automatic bank connection, medication alarm, or automatic recurring bill generation.
-- Data remains in this browser unless exported. Export a backup before clearing browser data or moving devices.
-- Avoid entering bank passwords/PINs, full identity numbers, or unnecessary sensitive medical information.
+## ข้อจำกัดสำคัญ
+- ยังไม่มี Cloud Sync จริง การซิงก์ข้ามอุปกรณ์ต้องพัฒนาระบบล็อกอินและฐานข้อมูลที่ปลอดภัยเพิ่ม
+- การแจ้งเตือนจะแสดงเมื่อเปิดเว็บ ไม่ใช่ push notification ตอนปิดเว็บ
+- ไม่ได้เชื่อมบัญชีธนาคารหรือระบบสุขภาพอัตโนมัติ
+- ไม่ควรเก็บ PIN รหัสผ่าน เลขบัตรเต็ม หรือข้อมูลอ่อนไหวที่ไม่จำเป็น
+- ข้อมูลที่เก็บในเบราว์เซอร์อาจหายเมื่อเคลียร์ข้อมูลเว็บไซต์ จึงควรสำรองไฟล์ไว้
+
+## ความเข้ากันได้กับข้อมูลเก่า
+รุ่นนี้พยายามนำเข้าข้อมูลจาก `gentle-bloom-v3` และ `lifeos-elegant-v1` โดยอัตโนมัติครั้งแรกเมื่อยังไม่มีข้อมูล v5 ในเบราว์เซอร์เดียวกัน หากย้ายอุปกรณ์ ให้ส่งออก JSON จากอุปกรณ์เดิมและนำเข้าในอุปกรณ์ใหม่
