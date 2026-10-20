@@ -1,19 +1,23 @@
-# Life OS – Gentle Bloom (Starter)
+# Life OS – Gentle Bloom v3
 
-## เปิดใช้งาน
-1. แตกไฟล์ ZIP
-2. เปิด `index.html` ในเว็บเบราว์เซอร์
-3. ข้อมูลตัวอย่างพร้อมให้ทดลอง ข้อมูลใหม่จะบันทึกใน localStorage ของเบราว์เซอร์เครื่องนี้
+A Thai-first, responsive pastel/kawaii personal life organizer.
 
-## ฟีเจอร์
-- ปรับเฉพาะส่วน Tasks/Projects โดยคงโครงสร้างและธีม 10 หน้าเดิม
-- 10 หน้าหลัก: Dashboard, Planner, Goals, Study, Habit Tracker, Finance, Journal, Recovery Mode, Progress & Review, Settings
-- Tasks มีสถานะ: ยังไม่เริ่ม, กำลังทำ, รอติดตาม, เสร็จแล้ว, ยกเลิก
-- Projects: สร้าง/แก้ไขโปรเจกต์ กำหนดสี วันเริ่มต้น วันครบกำหนด และรายละเอียด
-- ปฏิทินเดือน เลือกวัน ดูรายการและสถานะ
-- กรองงานตามสถานะ/โปรเจกต์ ค้นหา และมุมมอง Kanban
-- สำรองและนำเข้าข้อมูล JSON
-- Responsive สำหรับมือถือและจอใหญ่
+## Start
+Open `index.html` in a modern browser. No build step is required. Data is stored in the current browser's localStorage.
 
-## ข้อจำกัด
-ข้อมูลอยู่ในเบราว์เซอร์เครื่องนี้เท่านั้น ยังไม่มีบัญชีผู้ใช้หรือซิงก์ข้ามอุปกรณ์ และควรทดสอบก่อนใช้งานจริงหรือเผยแพร่จริง
+## Features
+- Dashboard with monthly master calendar connected to tasks, appointments, bills, and document expiry dates
+- Tasks with status, priority, category, date/time, projects, and goals
+- Study vocabulary bank, habit tracker, and journal
+- Finance: bank/cash account balances, income/expense/donation records, debt tracking, bills, savings goals
+- Health: water, sleep, exercise, mood, energy, weight/symptom logs, medication list, and appointments
+- Personal document expiry tracking and lead-time reminders shown when the app is open
+- Weekly/monthly review notes and history
+- JSON backup and restore; imports existing `lifeos-elegant-v1` local data on first launch if v3 data is absent
+
+## Limitations to know
+- **Cloud sync is not active yet.** Cross-device sync needs a real backend, authentication, per-user database security rules, and integration/testing. The Settings page gives setup notes; saving Firebase config alone does not enable sync.
+- Expiry reminders are visible inside the app when opened, not push notifications while it is closed.
+- No automatic bank connection, medication alarm, or automatic recurring bill generation.
+- Data remains in this browser unless exported. Export a backup before clearing browser data or moving devices.
+- Avoid entering bank passwords/PINs, full identity numbers, or unnecessary sensitive medical information.
